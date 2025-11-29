@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Portal - Latest News & Updates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div>
+                <div class="site-name">Daily<span>News</span></div>
+                <div class="tagline">Your Trusted Source for Latest Updates</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="navMenu">
+                <a href="#" class="active">Home</a>
+                <a href="#politics">Politics</a>
+                <a href="#business">Business</a>
+                <a href="#tech">Technology</a>
+                <a href="#sports">Sports</a>
+                <a href="#entertainment">Entertainment</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="breaking-news-container">
+            <span class="breaking-label">BREAKING</span>
+            <div class="breaking-text">
+                Major technology summit announced for next month • Global markets reach new heights • Climate conference concludes with historic agreement • Sports championship finals scheduled
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Main News Section -->
+        <main class="main-news">
+            <!-- Featured Article -->
+            <article class="featured-article">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=400&fit=crop" alt="Featured News" class="featured-image">
+                <div class="featured-content">
+                    <span class="category-badge">Technology</span>
+                    <h1>Revolutionary AI Technology Transforms Healthcare Industry</h1>
+                    <div class="article-meta">
+                        <span>📅 October 29, 2025</span>
+                        <span>✍️ Sarah Johnson</span>
+                        <span>⏱️ 5 min read</span>
+                    </div>
+                    <p>
+                        In a groundbreaking development that promises to revolutionize healthcare, researchers have unveiled an advanced artificial intelligence system capable of diagnosing diseases with unprecedented accuracy. The new technology combines machine learning algorithms with medical imaging to provide faster and more reliable diagnostic results, potentially saving countless lives through early detection.
+                    </p>
+                    <p>
+                        Healthcare professionals worldwide are praising this innovation as a major step forward in medical technology. The system has already been tested in multiple hospitals across different countries, showing remarkable success rates in identifying various conditions from cancers to cardiovascular diseases.
+                    </p>
+                    <a href="#" class="read-more">Read Full Story →</a>
+                </div>
+            </article>
+
+            <!-- Recent News Grid -->
+            <div class="recent-news">
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&h=250&fit=crop" alt="News">
+                    <div class="news-card-content">
+                        <span class="category-badge">Business</span>
+                        <h3>Global Markets Surge to Record Highs Amid Economic Recovery</h3>
+                        <p>Stock markets worldwide celebrate strongest quarter in years as economies bounce back stronger than expected...</p>
+                        <div class="news-card-meta">
+                            <span>📅 2 hours ago</span>
+                            <span>⏱️ 3 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1461088945293-0c17689e48ac?w=400&h=250&fit=crop" alt="News">
+                    <div class="news-card-content">
+                        <span class="category-badge">Sports</span>
+                        <h3>Championship Finals Set: Underdog Team Defies All Odds</h3>
+                        <p>In an extraordinary turn of events, the underdog team secures their place in the finals after a thrilling victory...</p>
+                        <div class="news-card-meta">
+                            <span>📅 4 hours ago</span>
+                            <span>⏱️ 4 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop" alt="News">
+                    <div class="news-card-content">
+                        <span class="category-badge">Science</span>
+                        <h3>Scientists Discover Potential Solution to Climate Change</h3>
+                        <p>Breakthrough research reveals innovative carbon capture technology that could significantly reduce greenhouse gases...</p>
+                        <div class="news-card-meta">
+                            <span>📅 6 hours ago</span>
+                            <span>⏱️ 6 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Trending Stories -->
+            <div class="sidebar-section">
+                <h2>🔥 Trending Now</h2>
+                <article class="sidebar-article">
+                    <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=150&h=150&fit=crop" alt="Trending">
+                    <div class="sidebar-article-content">
+                        <h3>Tech Giant Announces New Product Launch</h3>
+                        <p>15 minutes ago</p>
+                    </div>
+                </article>
+                <article class="sidebar-article">
+                    <img src="https://thumbs.dreamstime.com/b/oval-conference-room-international-flags-large-wood-table-symbolizing-global-collaboration-diplomacy-world-peace-403725710.jpg" alt="Trending">
+                    <div class="sidebar-article-content">
+                        <h3>International Peace Talks Show Progress</h3>
+                        <p>1 hour ago</p>
+                    </div>
+                </article>
+                <article class="sidebar-article">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=150&h=150&fit=crop" alt="Trending">
+                    <div class="sidebar-article-content">
+                        <h3>Electric Vehicles Sales Hit New Record</h3>
+                        <p>2 hours ago</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-section">
+                <h2>📑 Categories</h2>
+                <div class="categories-list">
+                    <div class="category-item">
+                        <span>Politics</span>
+                        <span class="category-count">156</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Business</span>
+                        <span class="category-count">243</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Technology</span>
+                        <span class="category-count">189</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Sports</span>
+                        <span class="category-count">312</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Entertainment</span>
+                        <span class="category-count">278</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Health</span>
+                        <span class="category-count">134</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Science</span>
+                        <span class="category-count">167</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editor's Picks -->
+            <div class="sidebar-section">
+                <h2>✨ Editor's Picks</h2>
+                <article class="sidebar-article">
+                    <img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=150&h=150&fit=crop" alt="Editor Pick">
+                    <div class="sidebar-article-content">
+                        <h3>The Future of Remote Work in 2025</h3>
+                        <p>Yesterday</p>
+                    </div>
+                </article>
+                <article class="sidebar-article">
+                    <img src="https://images.unsplash.com/photo-1501526029524-a8ea952b15be?w=150&h=150&fit=crop" alt="Editor Pick">
+                    <div class="sidebar-article-content">
+                        <h3>Travel Guide: Top Destinations This Year</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </article>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About DailyNews</h3>
+                    <p>Your trusted source for breaking news, in-depth analysis, and compelling stories from around the world. We deliver accurate, timely, and unbiased reporting 24/7.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">f</a>
+                        <a href="#" class="social-link" title="Twitter">𝕏</a>
+                        <a href="#" class="social-link" title="Instagram">📷</a>
+                        <a href="#" class="social-link" title="LinkedIn">in</a>
+                        <a href="#" class="social-link" title="YouTube">▶</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for daily updates and breaking news alerts.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" id="newsletterEmail">
+                        <button onclick="subscribeNewsletter()">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 DailyNews. All rights reserved. | Powered by Professional Journalism</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('active');
+        }
+
+        function subscribeNewsletter() {
+            const email = document.getElementById('newsletterEmail').value;
+            if (email && email.includes('@')) {
+                alert('Thank you for subscribing to our newsletter!');
+                document.getElementById('newsletterEmail').value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('navMenu').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
